@@ -14,7 +14,6 @@ body {
   min-height: 100vh;
   font-family: "Potta One", cursive;
   margin: 0;
-  padding: 0 1rem; /* Add horizontal padding to prevent cramming on edges */
 }
 
 h1 {
@@ -30,8 +29,6 @@ h1 {
   align-items: center;
   justify-content: center;
   color: antiquewhite;
-  max-width: 100%; /* Ensure it doesn't exceed screen width */
-  padding: 0 1rem; /* Add padding for breathing room */
 }
 
 .big-text {
@@ -60,64 +57,50 @@ h1 {
 /* Mobile responsiveness additions */
 @media (max-width: 768px) {
   /* Tablet and smaller */
-  body {
-    padding: 0 2rem; /* Increase horizontal padding for more space */
-  }
-
   h1 {
-    font-size: 1.8rem; /* Slightly smaller title, but not too much */
-    margin-top: 3rem; /* Reduce top margin a bit */
-  }
-
-  .countdown-container {
-    padding: 0 2rem; /* More padding around container */
+    font-size: 1.5rem; /* Slightly smaller title */
+    margin-top: 2rem; /* Reduce top margin */
   }
 
   .big-text {
-    font-size: 5rem; /* Keep larger for readability */
-    margin: 1.5rem 1rem; /* Increase margins for spacing between elements */
+    font-size: 4rem; /* Reduce countdown numbers for better fit */
+    margin: 0.5rem 1rem; /* Tighter margins */
   }
 
   .countdown-el span {
-    font-size: 1.1rem; /* Slightly smaller labels */
+    font-size: 1rem; /* Smaller labels */
   }
 
   #fixed-gif {
-    width: 90px; /* Slightly scale down GIF */
-    height: 81px; /* Maintain aspect ratio */
-    margin: -1rem auto; /* Adjust spacing */
+    width: 80px; /* Scale down GIF */
+    height: 72px; /* Maintain aspect ratio */
+    margin: -0.5rem auto; /* Adjust spacing */
   }
 }
 
 @media (max-width: 480px) {
   /* Mobile phones */
-  body {
-    padding: 0 1rem; /* Horizontal padding to use screen width better */
-  }
-
   h1 {
-    font-size: 1.5rem; /* Keep readable size */
-    margin-top: 2rem; /* Reduce top margin for more content space */
-  }
-
-  .countdown-container {
-    padding: 0 1rem; /* Padding to prevent cramming */
-    flex-direction: column; /* Stack vertically if it helps spacing, but you can remove if not needed */
-    gap: 1rem; /* Add gap between flex items for better spacing */
+    font-size: 1.2rem; /* Even smaller title */
+    margin-top: 1.5rem; /* Further reduce top margin */
   }
 
   .big-text {
-    font-size: 4rem; /* Larger than before for better readability */
-    margin: 1rem 0.5rem; /* Increase vertical margin, reduce horizontal to fit */
+    font-size: 3rem; /* Much smaller countdown numbers */
+    margin: 0.5rem 0.5rem; /* Tighter margins for narrow screens */
   }
 
   .countdown-el span {
-    font-size: 1rem; /* Keep readable */
+    font-size: 0.9rem; /* Smaller labels */
   }
 
   #fixed-gif {
-    width: 80px; /* Scale down but not too much */
-    height: 72px; /* Maintain aspect ratio */
+    width: 60px; /* Further scale down GIF */
+    height: 54px; /* Maintain aspect ratio */
     margin: -0.5rem auto; /* Adjust spacing */
+  }
+
+  .countdown-container {
+    flex-direction: column; /* Stack elements vertically on very small screens if needed */
   }
 }
