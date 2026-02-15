@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Countdown For Bb</title>
+        <title>Countdown Timer</title>
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
     </head>
     <body>
         <br><br><br>
-        <audio id="bgMusic" autoplay>
-            <source src="nikilow.mp3" type="audio/mpeg">
+        <audio id="background-music" autoplay loop preload="auto">
+        <source src="./nikilow.mp3" type="audio/mpeg">
+        <source src="./music/loop.ogg" type="audio/ogg"> <!-- Optional: Add fallback formats for better browser support -->
+         Your browser does not support the audio element. <!-- Fallback message for unsupported browsers -->
         </audio>
         <div class="countdown-container">
             <div class="countdown-el days-c">
@@ -33,5 +35,6 @@
         <h1>...Until i Confess to ???</h1>
         <!-- Fixed GIF added here (static, not draggable) -->
         <img id="fixed-gif" src="./doggu.gif" alt="Fixed GIF">
+        <button id="music-toggle" style="background: #ec9383; color: antiquewhite; border: none; padding: 0.3rem 0.8rem; font-family: 'Potta One', cursive; cursor: pointer; margin: 1rem auto; display: block;">Mute Music</button>
     </body>
 </html>
