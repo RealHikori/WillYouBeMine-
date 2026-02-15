@@ -103,4 +103,9 @@ h1 {
   .countdown-container {
     flex-direction: column; /* Stack elements vertically on very small screens if needed */
   }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 }
