@@ -53,3 +53,54 @@ h1 {
   display: block; /* Centers it if needed, or remove for inline */
   margin: -1rem auto; /* Centers horizontally and adds vertical space; tweak as desired */
 }
+
+/* Mobile responsiveness additions */
+@media (max-width: 768px) {
+  /* Tablet and smaller */
+  h1 {
+    font-size: 1.5rem; /* Slightly smaller title */
+    margin-top: 2rem; /* Reduce top margin */
+  }
+
+  .big-text {
+    font-size: 4rem; /* Reduce countdown numbers for better fit */
+    margin: 0.5rem 1rem; /* Tighter margins */
+  }
+
+  .countdown-el span {
+    font-size: 1rem; /* Smaller labels */
+  }
+
+  #fixed-gif {
+    width: 80px; /* Scale down GIF */
+    height: 72px; /* Maintain aspect ratio */
+    margin: -0.5rem auto; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile phones */
+  h1 {
+    font-size: 1.2rem; /* Even smaller title */
+    margin-top: 1.5rem; /* Further reduce top margin */
+  }
+
+  .big-text {
+    font-size: 3rem; /* Much smaller countdown numbers */
+    margin: 0.5rem 0.5rem; /* Tighter margins for narrow screens */
+  }
+
+  .countdown-el span {
+    font-size: 0.9rem; /* Smaller labels */
+  }
+
+  #fixed-gif {
+    width: 60px; /* Further scale down GIF */
+    height: 54px; /* Maintain aspect ratio */
+    margin: -0.5rem auto; /* Adjust spacing */
+  }
+
+  .countdown-container {
+    flex-direction: column; /* Stack elements vertically on very small screens if needed */
+  }
+}
