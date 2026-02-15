@@ -10,11 +10,11 @@
     <body>
         <br><br><br>
         <audio id="background-music" autoplay loop preload="auto">
-        <source src="./nikilow.mp3" type="audio/mpeg">
-        <source src="./music/loop.ogg" type="audio/ogg"> <!-- Optional: Add fallback formats for better browser support -->
-         Your browser does not support the audio element. <!-- Fallback message for unsupported browsers -->
+            <source src="./nikilow.mp3" type="audio/mpeg">
+            <source src="./music/loop.ogg" type="audio/ogg"> <!-- Optional: Add fallback formats for better browser support -->
+            Your browser does not support the audio element. <!-- Fallback message for unsupported browsers -->
         </audio>
-        <div class="countdown-container">
+        <div class="countdown-container" id="countdown-container">  <!-- Added ID for easy hiding -->
             <div class="countdown-el days-c">
                 <p class="big-text" id="Days">0</p>
                 <span>Days</span>
@@ -32,7 +32,8 @@
                 <span>Seconds</span>
             </div>
         </div>
-        <h1>...Until i Confess to ???</h1>
+            <div id="confession-message" style="display: none; text-align: center; font-size: 8rem; color: #f0bfec; font-family: 'Potta One', cursive; font-style: italic;">Confession Time!</div>  <!-- New element for the message, hidden by default -->
+            <h1>...Until i Confess to ???</h1>
         <!-- Fixed GIF added here (static, not draggable) -->
         <img id="fixed-gif" src="./doggu.gif" alt="Fixed GIF">
         <button id="music-toggle" style="background: #ec9383; color: antiquewhite; border: none; padding: 0.3rem 0.8rem; font-family: 'Potta One', cursive; cursor: pointer; margin: 1rem auto; display: block;">Toggle Music</button>
